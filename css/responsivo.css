@@ -1,0 +1,111 @@
+@media (max-width: 768px) {
+
+    body {
+        align-items: center;
+        padding-bottom: 110px;
+        box-sizing: border-box;
+    }
+
+body::before {
+    background-image: url("../imagens/fundo-celular.jpg");
+}
+
+    .container {
+        width: calc(100% - 60px);
+        max-width: none;
+        padding: 22px 18px;
+        box-sizing: border-box;
+        
+        margin-top: 50px;
+
+        min-height: 300px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    button {
+        font-size: 24px;
+        padding: 12px 24px;
+    }
+
+    .ursinho-topo {
+    width: 100px;
+    top: -80px;
+    left: 36%;
+    transform: translateX(-50%);
+}
+
+    .player {
+        width: calc(100% - 20px);
+        bottom: 10px;
+        border-radius: 22px;
+        padding: 10px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .capa {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nome-musica {
+    font-size: 21px;
+    line-height: 20px;
+    max-width: 155px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    .autor-musica {
+        font-size: 13px;
+    }
+
+    #playPause {
+        width: 43px;
+        height: 43px;
+        min-width: 43px;
+    }
+
+    #barraMusica {
+        height: 5px;
+    }
+
+#botaoSim,
+#botaoNao {
+    width: 115px;
+    height: 58px;
+    padding: 0;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botaoNao {
+    font-size: 18px;
+    line-height: 0.9;
+}
+#botaoSim {
+    font-size: 22px;
+}
+
+.gif-final {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tela-nao {
+    background: rgba(70, 80, 120, 0.92);
+}
+
+.tela-nao .caixa-final {
+    background: rgba(255, 240, 245, 0.94);
+}
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="stylesheet" href="css/telas.css">
+  <link rel="stylesheet" href="css/sim.css"> </head>
+
+<body class="sim-page">
+
+<div class="container-sim">
+    <img id="ursinhoTopo" class="gif-topo-1" src="imagens/ursinhosim1.gif" alt="Ursinho">
+
+    <h1>UHULLLLLL!!!!!!!!</h1>
+
+    <p>EBAAAAAA!!, eu tô muito feliz por a gente ter voltado a ser amigos, muito mesmo. eu espero, do fundo do meu coração, que a nossa amizade possa ser muito boa e muito feliz. eu acho você uma pessoa ótima, a melhor pessoa do mundo, e você consegue ser uma pessoa boa naturalmente, sem precisar forçar ser uma pessoa boa. você é uma pessoa ótima apenas sendo você mesma. você trata todo mundo bem. mesmo com tudo que aconteceu, eu continuo admirando muito quem você é, muito mesmo. se algum dia você começar a achar que é uma pessoa ruim, não se engane pelo seu pensamento. você é uma pessoa muito legal, engraçada, gentil e uma ótima amiga. eu queria que o planeta terra fosse seu, ou até a lua, porque aí as pessoas iriam conhecer você e conhecer a pessoa ótima que você é. espero que a gente faça bastante call, jogue bastante e assista bastante coisa juntos. espero que, quando você olhar para o passado daqui a alguns anos, você se lembre de tudo isso como uma lembrança feliz e boa, e não como uma lembrança triste. obrigado por ter aceitado voltar a ser minha amiga. ter você por perto já deixa os meus dias muito melhores. e, por favor, nunca se esqueça de que, quando você precisar conversar, jogar, assistir ou rir, saiba que eu vou estar aqui por você.</p>
+</div>
+
+<div class="player">
+    <img src="imagens/capa-sim.jpg" class="capa" id="capaMusica" alt="Capa da Música">
+
+    <div class="info-musica">
+        <p class="nome-musica">Right Here Waiting</p>
+        <p class="autor-musica">Richard Marx</p>
+
+        <input type="range" id="barraMusica" value="0" min="0" max="100">
+
+        <div class="tempo-area">
+            <span id="tempoAtual">0:00</span>
+            <span id="tempoTotal">0:00</span>
+        </div>
+    </div>
+
+    <button id="playPause" onclick="toggleMusica()">
+        <img id="iconePlayPause" src="imagens/play.svg" alt="Play/Pause" style="width: 20px; height: 20px;">
+    </button>
+</div>
+
+<audio id="musica" src="musicas/rm.mp3" loop></audio>
+
+<script src="js/sim.js"></script>
+
+</body>
+</html>

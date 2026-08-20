@@ -1,0 +1,171 @@
+/* Configuração da Página */
+body.sim-page {
+    margin: 0 !important;
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 100px 20px 160px 20px !important; /* Espaço para o GIF no topo e o player embaixo */
+    box-sizing: border-box !important;
+}
+
+/* Container Rosa */
+.container-sim {
+    width: 92% !important;
+    max-width: 520px !important;
+    background: rgba(255, 209, 220, 0.92) !important;
+    border: 2px solid rgba(177, 111, 143, 0.4) !important;
+    border-radius: 25px !important;
+    padding: 30px 20px 25px 20px !important;
+    text-align: center !important;
+    box-shadow: 0 10px 30px rgba(177, 111, 143, 0.45) !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    overflow: visible !important; /* Impede que o GIF seja cortado */
+    margin: 0 auto !important;
+}
+
+.container-sim h1 {
+    margin: 15px 0 10px 0 !important;
+    font-family: 'Caveat', cursive !important;
+    font-size: 38px !important;
+    color: #B16F8F !important;
+}
+
+.container-sim p {
+    margin-top: 5px !important;
+    font-family: 'Caveat', cursive !important;
+    font-size: 21px !important;
+    line-height: 1.3 !important;
+    color: #7d5366 !important;
+}
+
+/* ========================================================
+   REGRAS INDIVIDUAIS DOS GIFS (PC E CELULAR SEPARADOS)
+   ======================================================== */
+
+/* --- GIF 1 --- */
+.gif-topo-1 {
+    width: 100px !important;
+    height: auto !important;
+    display: block !important;
+    position: absolute !important;
+    top: -95px !important;
+    left: 52% !important; /* PC */
+    transform: translateX(-50%) !important;
+    z-index: 100 !important;
+}
+
+@media (max-width: 480px) {
+    .gif-topo-1 {
+        width: 90px !important;
+        top: -87px !important;
+        left: 53% !important; /* Celular */
+    }
+}
+
+/* --- GIF 2 --- */
+.gif-topo-2 {
+    width: 123px !important;
+    height: auto !important;
+    display: block !important;
+    position: absolute !important;
+    top: -95px !important;
+    left: 50% !important; /* PC */
+    transform: translateX(-50%) !important;
+    z-index: 100 !important;
+}
+
+@media (max-width: 480px) {
+    .gif-topo-2 {
+        width: 113px !important;
+        top: -87px !important;
+        left: 50% !important; /* Celular */
+    }
+}
+
+/* --- GIF 3 --- */
+.gif-topo-3 {
+    width: 132px !important;
+    height: auto !important;
+    display: block !important;
+    position: absolute !important;
+    top: -110px !important;
+    left: 53% !important; /* PC */
+    transform: translateX(-50%) !important;
+    z-index: 100 !important;
+}
+
+@media (max-width: 480px) {
+    .gif-topo-3 {
+        width: 110px !important;
+        top: -92px !important;
+        left: 54% !important; /* Celular */
+    }
+}
+
+/* --- GIF 4 --- */
+.gif-topo-4 {
+    width: 106px !important;
+    height: auto !important;
+    display: block !important;
+    position: absolute !important;
+    top: -102px !important;
+    left: 52% !important; /* PC */
+    transform: translateX(-50%) !important;
+    z-index: 100 !important;
+}
+
+@media (max-width: 480px) {
+    .gif-topo-4 {
+        width: 91px !important;
+        top: -88px !important;
+        left: 50% !important; /* Celular */
+    }
+}
+
+/* --- GIF 5 --- */
+.gif-topo-5 {
+    width: 100px !important;
+    height: auto !important;
+    display: block !important;
+    position: absolute !important;
+    top: -97px !important;
+    left: 52% !important; /* PC */
+    transform: translateX(-50%) !important;
+    z-index: 100 !important;
+}
+
+@media (max-width: 480px) {
+    .gif-topo-5 {
+        width: 88px !important;
+        top: -85px !important;
+        left: 52% !important; /* Celular */
+    }
+}
+
+/* ========================================================
+   AJUSTES EXCLUSIVOS DE CELULAR
+   ======================================================== */
+@media (max-width: 480px) {
+    body.sim-page {
+        padding-top: 80px !important;
+        padding-bottom: 180px !important; /* Espaço extra no final pro celular */
+    }
+
+    .container-sim {
+        padding: 30px 15px 20px 15px !important;
+    }
+
+    .container-sim h1 {
+        font-size: 32px !important;
+    }
+
+    .container-sim p {
+        font-size: 19px !important;
+    }
+}

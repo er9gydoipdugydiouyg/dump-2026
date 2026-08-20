@@ -1,0 +1,119 @@
+.player {
+    position: fixed;
+    bottom: 12px; /* Colado lá no final */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 360px; /* Tamanho compacto perfeito para celular e PC */
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255, 209, 220, 0.96);
+    border: 2px solid rgba(177, 111, 143, 0.4);
+    border-radius: 20px;
+    padding: 8px 12px;
+
+    box-shadow: 0 10px 25px rgba(177, 111, 143, 0.5);
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.capa {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.info-musica {
+    flex: 1;
+    color: #B16F8F;
+    font-family: 'Caveat', cursive;
+    text-align: left;
+}
+
+.nome-musica {
+    margin: 0;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.autor-musica {
+    margin: 2px 0 4px 0;
+    font-size: 12px;
+    color: #B16F8F;
+    opacity: 0.75;
+    font-family: Arial, sans-serif;
+}
+
+#barraMusica {
+    width: 100%;
+    height: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #B16F8F 0%, #B16F8F 0%, rgba(177,111,143,.25) 0%, rgba(177,111,143,.25) 100%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#barraMusica::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #B16F8F;
+}
+
+.tempo-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #B16F8F;
+    opacity: 0.8;
+}
+
+#playPause {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background: #ffd1dc;
+    color: #B16F8F;
+    box-shadow: 0 4px 10px rgba(177,111,143,.35);
+    cursor: pointer;
+}
+
+.tela-final {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 240, 245, 0.96);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    text-align: center;
+}
+
+.caixa-final {
+    width: 85%;
+    max-width: 430px;
+    background: rgba(255, 209, 220, 0.95);
+    border: 2px solid rgba(177,111,143,.4);
+    border-radius: 25px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(177,111,143,.5);
+}

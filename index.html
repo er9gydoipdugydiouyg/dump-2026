@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site top</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/telas.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body> 
+
+<div id="entrada">
+    <div class="caixa-entrada">
+        <h2>Para isa</h2>
+        <button onclick="entrarSite()">Abrir 💗</button>
+    </div>
+</div>
+
+  <div id="emojis"></div>
+
+  <div class="container">
+
+  <img src="imagens/ursinho.gif" class="ursinho-topo" id="ursinhoTopo">
+
+<h1>A gente poderia<br>
+voltar a ser<br>
+amigos?
+</h1> 
+
+<div class="area-botoes">
+
+    <div class="botao-com-gif" id="areaBotaoSim">
+        <button class="botoes-escolha" id="botaoSim" onclick="clicarSim()">
+            sim
+        </button>
+
+        <img src="imagens/giffeliz1.gif" class="gif-botao gif-sim">
+    </div>
+
+    <div class="botao-com-gif" id="areaBotaoNao">
+        <button class="botoes-escolha" id="botaoNao" onclick="clicarNao()">
+            não
+        </button>
+
+        <img src="imagens/ursinho1.gif" class="gif-botao gif-nao">
+    </div>
+
+</div>
+
+<p class="mensagem-nao" id="mensagemNao">
+    tudo bem... tudo bem. se você achar que ainda está muito cedo para a gente voltar a ser amigos, tá tudo bem. eu espero o tempo que for necessário para a gente voltar a ser amigos. se você não quiser mais voltar a ser a minha amiga, ta tudo bem também. eu espero, do fundo do meu coração, que a sua vida esteja sendo muito boa e muito feliz em curitiba, e eu também espero que ela seja muito boa la em manaus. saiba que, independentemente de quanto tempo passe, eu sempre vou continuar esperando você virar minha amiga de novo.
+</p>
+
+  </div>
+
+  <div class="player">
+    <img src="imagens/capa.jpg" class="capa">
+
+    <div class="info-musica">
+        <p class="nome-musica">
+I Always,For You</p>
+        <p class="autor-musica">Lee Sun Hee</p>
+
+        <input type="range" id="barraMusica" value="0" min="0" max="100">
+
+        <div class="tempo-area">
+            <span id="tempoAtual">0:00</span>
+            <span id="tempoTotal">2:04</span>
+        </div>
+    </div>
+
+    <button id="playPause" onclick="toggleMusica()">
+        <img id="iconePlayPause" src="imagens/play.svg" alt="Play/Pause" style="width: 20px; height: 20px;">
+    </button>
+</div>
+
+<div class="tela-final" id="telaSim">
+    <div class="caixa-final">
+        <img src="imagens/giffeliz1.gif" class="gif-final">
+
+        <h2>que bom 💗</h2>
+
+        <p>
+            <br>
+            <br>
+        </p>
+    </div>
+</div>
+
+<div class="tela-final tela-nao" id="telaNao">
+    <div class="caixa-final">
+        <img src="imagens/ursinho1.gif" class="gif-final">
+
+        <h2>tudo bem...</h2>
+
+        <p>
+            tudo bem. se você achar que ainda está muito cedo para a gente voltar a ser amigos, tá tudo bem. eu espero o tempo que for necessário para a gente voltar a ser amigos. se você não quiser mais voltar a ser a minha amiga, ta tudo bem também. eu espero, do fundo do meu coração, que a sua vida esteja sendo muito boa e muito feliz em curitiba, e eu também espero que ela seja muito boa la em manaus. saiba que, independentemente de quanto tempo passe, eu sempre vou continuar esperando você virar minha amiga de novo.<br>
+        </p>
+    </div>
+</div>
+
+  <audio id="musica" src="musicas/musica.mp3" loop></audio>
+
+<script src="js/musica.js"></script>
+<script src="js/gifs.js?v=2"></script>
+<script src="js/entrada.js"></script>
+<script src="js/botoes.js"></script>
+
+</body>
+</html>

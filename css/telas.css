@@ -1,0 +1,148 @@
+#entrada {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255,255,255,.18);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    transition: opacity .8s ease;
+}
+
+.caixa-entrada {
+    background: rgba(255, 240, 245, 0.95);
+    border: 2px solid rgba(177,111,143,.4);
+    border-radius: 25px;
+
+    padding: 35px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(177,111,143,.45);
+
+    animation:
+        aparecerContainer 1s ease-out forwards,
+        flutuarContainer 5s ease-in-out infinite 1s;
+
+    transition: transform .8s ease, opacity .8s ease;
+}
+
+.caixa-entrada h2 {
+    font-family: 'Caveat', cursive;
+    color: #B16F8F;
+    font-size: 45px;
+    margin: 0 0 15px 0;
+}
+
+.tela-final {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255, 240, 245, 0.96);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10000;
+    text-align: center;
+}
+
+.caixa-final {
+    width: 85%;
+    max-width: 430px;
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    background: rgba(255, 209, 220, 0.95);
+    border: 2px solid rgba(177,111,143,.4);
+    border-radius: 25px;
+
+    padding: 30px 25px;
+
+    box-shadow: 0 10px 30px rgba(177,111,143,.5);
+
+    animation: aparecerContainer 0.8s ease forwards;
+}
+
+.caixa-final h2 {
+    font-family: 'Caveat', cursive;
+    color: #B16F8F;
+    font-size: 46px;
+    margin: 0 0 15px 0;
+}
+
+.caixa-final p {
+    font-family: 'Caveat', cursive;
+    color: #B16F8F;
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.mensagem-nao {
+    font-family: 'Caveat', cursive;
+    color: #B16F8F;
+    font-size: 25px;
+    margin-top: 10px;
+    display: none;
+}
+
+.gif-final {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tela-nao {
+    background: rgba(70, 80, 120, 0.92);
+}
+
+.tela-nao .caixa-final {
+    background: rgba(255, 240, 245, 0.94);
+}
+
+.tela-final.fechando {
+    animation: sumirTela 0.3s ease forwards;
+}
+
+@keyframes sumirTela {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .caixa-final {
+        width: 85%;
+        max-height: 75vh;
+        padding: 22px 18px;
+    }
+
+    .caixa-final h2 {
+        font-size: 38px;
+    }
+
+    .caixa-final p {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .gif-final {
+        width: 110px;
+        height: 110px;
+    }
+}
